@@ -1,0 +1,10 @@
+a = input('Enter a string: ')
+daxie,xiaoxie = 0,0
+for i in a:
+    if i.islower():
+        xiaoxie+=1
+    elif i.isupper():
+        daxie+=1
+
+print(f'Uppercase: {daxie}', end = ' ')
+print(f'Lowercase: {xiaoxie}',end = ' ')
