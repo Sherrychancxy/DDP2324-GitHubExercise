@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+    <head >
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width = device width" initial-scale = "1.0">
+        <title>Warwick Ramen Stand</title>
+        <link rel="stylesheet" href="ramenstyle.css">
+ 
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "head">
+                <h1>Welcome to Warwick Ramen Stand</h1>
+            </div>
+            <div class = "breadcrumbs"></div>
+                <nav class = "breadcrumb">
+                    <ul>
+                        <li><a href = "https://warwick.ac.uk/">Home</a></li>
+                        <li><a href = "https://warwick.ac.uk/">Ramen</a></li>
+                        <li><a href = "https://warwick.ac.uk/">Snacks</a></li>
+                        <li><a href = "https://warwick.ac.uk/">About us</a></li>
+                    </ul>
+                </nav>
+                
+
+            <div class = "pictures"></div>
+                <h2 class = "pic">Our Menu</h2>
+                    <ul class = "pic">
+                        <li>
+                            <h3 >Tonkotsu Ramen</h3>
+                                <img src="Tonkotsu.jpg" alt="Tonkotsu Ramen">
+                        </li>
+                        <li>
+                            <h3>Shoyu Ramen</h3>
+                                <img src="Shoyu.jpg" alt="Shoyu Ramen">
+                        </li>
+                        <li>
+                            <h3>Miso Ramen</h3>
+                                <img src="Miso.jpg" alt="Miso Ramen">
+                        </li>
+                        <li>
+                            <h3>Veggie Ramen</h3>
+                                <img src="Veggie.jpg" alt="Veggie Ramen">
+                        </li>
+                    </ul>
+            <div class = menu></div>
+                <h2 id = "open">Opening Hours</h2>
+                <table class = "table">
+                    <tr class = "title">
+                        <th>Day</th>
+                        <th>Opening Time</th>
+                        <th>Closing Time</th>
+                    </tr>
+                    <tr class = "ntitle">
+                        <td>Monday - Friday</td>
+                        <td>11:00 AM</td>
+                        <td>10:00 PM</td>
+                    </tr>
+                    <tr class = "ntitle">
+                        <td>Saturday</td>
+                        <td>12:00 PM</td>
+                        <td>11:00 PM</td>
+                    </tr>
+                    <tr class = "ntitle">
+                        <td>Sunday</td>
+                        <td>Closed</td>
+                        <td>Closed</td>
+                    </tr>
+                </table>
+            <div class = "footer">
+                <p>Contact us at ramen@warwick.ac.uk</p>
+            </div>
+    </body>
+</html>
