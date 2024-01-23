@@ -1,0 +1,6 @@
+try:
+    fp = open('text.txt','r')
+    fp.read()
+    fp.close()
+except FileNotFoundError:
+    print('the computer can not find the file.')
