@@ -1,0 +1,108 @@
+.head{
+    background-color:rgb(225, 68, 186);
+    padding : 30px 20px;
+
+    color:rgb(255, 255, 255);
+    flex:1;
+    display:flex;
+    text-align: center;
+
+}
+
+.breadcrumb ul{
+    list-style: none;
+    background-color:rgb(225, 68, 186);
+    padding: 10px 130px;
+    flex:1;
+
+}
+
+a{
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+}
+a:hover{
+    color:rgb(8, 8, 4);
+}
+
+.breadcrumb ul li{
+    display:inline;
+    margin-right: 10px;
+    color:#e7ba8f;
+
+}
+
+.breadcrumb {
+    font-size:110%;
+    font-family:'Times New Roman', Times, serif;
+    flex:1;
+}
+
+.pictures img{
+
+    margin: 0 auto;
+    width:0 auto;
+    height:auto;
+    margin-top:1px;
+
+}
+
+.pic{
+    color:rgb(151, 28, 54);
+    flex:1;
+
+}
+
+.menu{
+    flex:2;
+}
+
+.table{
+    border-collapse:collapse;
+    display: border;
+    margin:0 auto;
+}
+
+.table, .table th, .table tr, table td{
+    border:1px solid #ac2755;
+}
+
+.table th, table tr{
+    padding: 20px 20px;
+    background-color: pink;
+    color:rgb(151, 28, 54);
+}
+
+.title{
+    text-align:center;
+}
+
+.ntitle{
+    text-align: left;
+    padding: 30px 20px;
+}
+
+#open{
+    color:rgb(151, 28, 54);
+}
+
+.footer{
+    background-color:rgb(225, 68, 186);
+    padding : 1px 20px;
+    color:rgb(0, 0, 0);
+    margin-top:20%;
+}
+
+.container{
+    background-color:pink;
+    display:flex;
+    flex-direction:column;
+    width:auto;
+    height:auto;
+    align-items:center;
+
+
+
+}
+
+
