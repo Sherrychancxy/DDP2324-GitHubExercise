@@ -1,0 +1,20 @@
+from datetime import datetime
+
+def date_passed(todays_date, scheduled_date):
+    today = datetime.strptime(todays_date,'%dth %B')
+    schedule = datetime.strptime(scheduled_date,'%dth %B')
+
+    if today > schedule:
+        print('the scheduled date has passed.')
+    elif today < schedule:
+        print('the scheduled date is yet to pass.')
+    else:
+        print('the scheduled date is today.')
+
+
+
+
+# Test cases
+date_passed("26th March", "25th March")  # Expected: Scheduled date has passed
+date_passed("26th March", "26th March")  # Expected: Scheduled date is today
+date_passed("26th March", "27th March")  # Expected: Scheduled date is yet to pass
