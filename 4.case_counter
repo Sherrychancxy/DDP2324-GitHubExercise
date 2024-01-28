@@ -1,0 +1,16 @@
+def counter_case(text):
+    num_upper = 0
+    num_lower = 0
+
+    for i in text:
+        if i.isupper():
+            num_upper += 1
+        elif i.islower():
+            num_lower += 1
+
+## !!!print 一定要和for对齐！！！！！
+    print(f'Uppercase:{num_upper}, Lowercase:{num_lower}')
+
+
+
+counter_case('Python')
