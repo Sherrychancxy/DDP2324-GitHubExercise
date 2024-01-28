@@ -1,0 +1,17 @@
+def compound_interest_calculator(P, r, n, t):
+    P = float(P)
+    r = float(r)
+    n = int(r)
+    t = int(t)
+
+
+    if P<=0 or r<0 or n<=0 or t<=0:
+        return 'invalid value, please input values again.'
+    else:
+        A = P*(1 + r/n)**(n*t)
+    return A
+
+# Test cases
+print(compound_interest_calculator(1000, 0.05, 12, 7))
+print(compound_interest_calculator(500, 0.07, 4, 10))
+print(compound_interest_calculator(1500, 0.03, 6, 7))
