@@ -1,0 +1,19 @@
+def fibonacci_sequence(max_value):
+    if max_value <0:
+        return 'Invalid value, please enter again.'
+    elif max_value == 0:
+        return [0]
+    else:
+        sequence = [0,1]
+        while sequence[-1] +sequence[-2] <= max_value:
+            next_sequence = sequence[-1] +sequence[-2]
+            sequence.append(next_sequence)
+        return sequence
+
+
+
+# Test cases
+print(fibonacci_sequence(99))  # Expected output: [0, 1, 1, 2, 3, 5, 8]
+print(fibonacci_sequence(1))  # Expected output: [0, 1, 1]
+print(fibonacci_sequence(0))  # Expected output: [0]
+print(fibonacci_sequence(-5))  # Expected: Empty list or error message
