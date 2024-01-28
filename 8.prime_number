@@ -1,0 +1,20 @@
+def is_prime(number):
+    yinshu = 0
+    if number <= 1:
+        return False
+    elif number> 1:
+        for i in range(2, int(number)):
+            if number % i == 0:
+                yinshu += 1
+                break
+
+        if yinshu >= 1:
+            return False
+        else:
+            return True
+
+
+print(is_prime(11))  # Expected output: True
+print(is_prime(4))  # Expected output: False
+print(is_prime(2))  # Expected output: True
+print(is_prime(1))
