@@ -1,0 +1,17 @@
+def speeding_ticket(speed,is_birthday):
+    speed = int(speed)
+    is_birthday = bool(is_birthday)
+    min_speed = 60
+    max_speed = 80
+
+    if is_birthday == True:
+        min_speed += 5
+        max_speed += 5
+    if speed <= min_speed:
+        print('No ticket')
+    elif min_speed < speed <= max_speed:
+        print('Small ticket')
+    else:
+        print('Big ticket')
+
+speeding_ticket(62, True)
