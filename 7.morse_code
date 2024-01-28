@@ -1,0 +1,43 @@
+def morse_translator(text):
+    # Morse code mapping
+    morse_code_dict = {
+        "A": ".-",
+        "B": "-...",
+        "C": "-.-.",
+        "D": "-..",
+        "E": ".",
+        "F": "..-.",
+        "G": "--.",
+        "H": "....",
+        "I": "..",
+        "J": ".---",
+        "K": "-.-",
+        "L": ".-..",
+        "M": "--",
+        "N": "-.",
+        "O": "---",
+        "P": ".--.",
+        "Q": "--.-",
+        "R": ".-.",
+        "S": "...",
+        "T": "-",
+        "U": "..-",
+        "V": "...-",
+        "W": ".--",
+        "X": "-..-",
+        "Y": "-.--",
+        "Z": "--..",
+    }
+## upper后面记得加括号
+    text = text.upper()
+    morse_code_list = []
+    for i in text:
+        if i.isalpha():
+            morse_code_list.append(morse_code_dict[i])
+        elif i.isspace():
+            morse_code_list.append("/")
+
+    list_str = " ".join(morse_code_list)
+    return list_str
+
+print(morse_translator("hello world"))
