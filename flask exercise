@@ -1,0 +1,29 @@
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+
+@app.route('/')
+def hello_world():  # put application's code here
+    return render_template('index.html')
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
+@app.route('/blog/<int:blog_id>')
+def blog(blog_id):
+    return render_template('blog.html', blog_id=blog_id, username='cxy')
+
+@app.route('/control')
+def control():
+    age=13
+    books=[{
+        'name':'三国演义',
+        'author':'罗贯中'
+    },{'name':'红楼梦',
+        'author':'曹雪芹'}]
+    return render_template('control.html',age=age, books=books)
+
+if __name__ == '__main__':
+    app.run()
